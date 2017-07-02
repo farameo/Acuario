@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_luces"
+            android:icon="@drawable/ic_menu_luces"
+            android:title="@string/luces" />
+        <item
+            android:id="@+id/nav_nivel_agua"
+            android:icon="@drawable/ic_menu_nivel_agua"
+            android:title="@string/nivel_agua" />
+
+        <item
+            android:id="@+id/nav_blue_con_des"
+            android:icon="@drawable/ic_menu_bluetooth"
+            android:title="@string/blue_desconectado" />
+
+        <item
+            android:id="@+id/nav_ventilador"
+            android:icon="@drawable/ic_menu_ventilador"
+            android:title="@string/ventilador" />
+    </group>
+
+    <item android:title="@string/mi_reef">
+        <menu>
+            <item
+                android:id="@+id/nav_bitacora"
+                android:icon="@drawable/ic_menu_bitacora"
+                android:title="@string/bitacora" />
+            <item
+                android:id="@+id/nav_enviar_comentario"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/enviar_comentario" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Acuario</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="action_settings">Settings</string>
+    
+    <string name="luces">Configurar las luces</string>
+    <string name="blue">Conectarse al sistema</string>
+    <string name="blue_conect">Conectado al sistema</string>
+    <string name="blue_config">Configuracion de bluetooth</string>
+    <string name="blue_desconectado">Desconectado del sistema</string>
+    <string name="nivel_agua">Setear el nivel de agua</string>
+    <string name="ventilador">Temperatura maxima</string>
+    <string name="mi_reef">Mi Reef</string>
+    <string name="bitacora">Mediciones del agua</string>
+    <string name="enviar_comentario">Enviar comentario</string>
+    <string name="mi_acuario">Acuario</string>
+    <string name="titulo_bajo">Controles basicos de mi acuario. Creado por Goosfancito  (Argentina)</string>
+
+</resources>
