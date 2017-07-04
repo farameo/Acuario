@@ -151,7 +151,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/et_c3"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="13dp"
                     android:text="@string/c4" />
 
                 <EditText
@@ -174,6 +174,38 @@
                     android:layout_below="@+id/c4"
                     android:layout_marginTop="9dp"
                     android:background="#edd9d9" />
+
+                <TextView
+                    android:id="@+id/c5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/et_c4"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/c5" />
+
+                <EditText
+                    android:id="@+id/et_c5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/c5"
+                    android:layout_alignBottom="@+id/c5"
+                    android:layout_alignLeft="@+id/et_c4"
+                    android:layout_alignStart="@+id/et_c4"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/c5"
+                    android:layout_marginTop="9dp"
+                    android:background="#edd9d9" />
+
             </RelativeLayout>
 
 
