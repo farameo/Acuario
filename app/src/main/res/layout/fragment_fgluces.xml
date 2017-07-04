@@ -25,110 +25,155 @@
                 android:layout_height="wrap_content"
                 android:text="@string/seteo_luces" />
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="#000" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#e6d7d7" />
+
                 <TextView
                     android:id="@+id/encendido"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="7dp"
+                    android:paddingLeft="5dp"
                     android:text="@string/encendido" />
 
+
                 <TextView
-                    android:id="@+id/hora_inicio"
-                    android:layout_width="100dp"
+                    android:id="@+id/c1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_below="@+id/encendido"
-                    android:textAlignment="textEnd"
-                    android:layout_marginTop="23dp"
-                    android:layout_toEndOf="@+id/encendido"
-                    android:layout_toRightOf="@+id/encendido"
-                    android:text="@string/hora_encendido" />
+                    android:layout_marginTop="40dp"
+                    android:text="@string/c1" />
 
                 <EditText
-                    android:id="@+id/edHora_encendido"
-                    android:layout_width="60dp"
+                    android:id="@+id/et_c1"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="31dp"
-                    android:layout_marginStart="31dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view2"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="3dp"
                     android:ems="10"
                     android:inputType="time"
-                    android:layout_alignBottom="@+id/hora_inicio"
-                    android:layout_toRightOf="@+id/hora_inicio"
-                    android:layout_toEndOf="@+id/hora_inicio" />
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/c1"
+                    android:layout_marginTop="9dp"
+                    android:background="#edd9d9" />
 
                 <TextView
-                    android:id="@+id/potencia_inicio"
-                    android:layout_width="100dp"
+                    android:id="@+id/c2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/hora_inicio"
-                    android:textAlignment="viewEnd"
-                    android:layout_marginTop="16dp"
-                    android:layout_toLeftOf="@+id/edHora_encendido"
-                    android:layout_toStartOf="@+id/edHora_encendido"
-                    android:text="@string/potencia_encendido" />
+                    android:layout_alignBaseline="@+id/et_c2"
+                    android:layout_alignBottom="@+id/et_c2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/c2" />
 
                 <EditText
-                    android:id="@+id/edpotencia_inicio"
-                    android:layout_width="60dp"
+                    android:id="@+id/et_c2"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/v1"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="3dp"
                     android:ems="10"
                     android:inputType="time"
-                    android:layout_alignBottom="@+id/potencia_inicio"
-                    android:layout_alignLeft="@+id/edHora_encendido"
-                    android:layout_alignStart="@+id/edHora_encendido" />
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/c2"
+                    android:layout_marginTop="9dp"
+                    android:background="#edd9d9" />
 
                 <TextView
-                    android:id="@+id/potencia_incrementos"
-                    android:layout_width="100dp"
+                    android:id="@+id/c3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/potencia_inicio"
-                    android:textAlignment="viewEnd"
-                    android:layout_marginTop="16dp"
-                    android:layout_toLeftOf="@+id/edHora_encendido"
-                    android:layout_toStartOf="@+id/edHora_encendido"
-                    android:text="@string/potencia_incrementos" />
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/view3"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/c3" />
 
                 <EditText
-                    android:id="@+id/edpotencia_incrementos"
-                    android:layout_width="60dp"
+                    android:id="@+id/et_c3"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/c3"
+                    android:layout_alignBottom="@+id/c3"
+                    android:layout_alignLeft="@+id/et_c2"
+                    android:layout_alignStart="@+id/et_c2"
+                    android:layout_marginTop="3dp"
                     android:ems="10"
                     android:inputType="time"
-                    android:layout_alignBottom="@+id/potencia_incrementos"
-                    android:layout_alignLeft="@+id/edHora_encendido"
-                    android:layout_alignStart="@+id/edHora_encendido" />
-
-               <TextView
-                    android:id="@+id/minutos_incrementos"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/potencia_incrementos"
                     android:textAlignment="viewEnd"
-                    android:layout_marginTop="16dp"
-                    android:layout_toLeftOf="@+id/edHora_encendido"
-                    android:layout_toStartOf="@+id/edHora_encendido"
-                    android:text="@string/minutos_incremento" />
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/c3"
+                    android:layout_marginTop="9dp"
+                    android:background="#edd9d9" />
+
+                <TextView
+                    android:id="@+id/c4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/et_c3"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/c4" />
 
                 <EditText
-                    android:id="@+id/edminutos_incrementos"
-                    android:layout_width="60dp"
+                    android:id="@+id/et_c4"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/c4"
+                    android:layout_alignBottom="@+id/c4"
+                    android:layout_alignLeft="@+id/et_c3"
+                    android:layout_alignStart="@+id/et_c3"
+                    android:layout_marginTop="3dp"
                     android:ems="10"
                     android:inputType="time"
-                    android:layout_alignBottom="@+id/minutos_incrementos"
-                    android:layout_alignLeft="@+id/edHora_encendido"
-                    android:layout_alignStart="@+id/edHora_encendido" />
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp" />
 
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/c4"
+                    android:layout_marginTop="9dp"
+                    android:background="#edd9d9" />
             </RelativeLayout>
 
 

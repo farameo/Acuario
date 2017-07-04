@@ -14,7 +14,7 @@
     <string name="blue_desconectado">Desconectado del sistema</string>
     <string name="nivel_agua">Setear el nivel de agua</string>
     <string name="ventilador">Temperatura maxima</string>
-    <string name="mi_reef">Mi Reef</string>
+    <string name="mi_reef">Mis cosas</string>
     <string name="bitacora">Mediciones del agua</string>
     <string name="enviar_comentario">Enviar comentario</string>
     <string name="mi_acuario">Acuario</string>
@@ -25,10 +25,11 @@
     <string name="seteo_luces">Configure a su gusto como desea que funcione el grupo de luces</string>
 
     <string name="encendido">Encendido</string>
-    <string name="hora_encendido">Hora de encendido</string>
-    <string name="potencia_encendido">Potencia de la luz al iniciar</string>
-    <string name="potencia_incrementos">Incrementos en potencia</string>
-    <string name="minutos_incremento">Incrementos en minutos</string>
-    <string name="potencia_final">Potencia final de la luz</string>
+    <string name="c1">Hora de encendido</string>
+    <string name="c2">Potencia de la luz al iniciar (%)</string>
+    <string name="c3">Incrementos en potencia (%)</string>
+    <string name="c4">Incrementos en minutos</string>
+    <string name="c5">Potencia final de la luz (%)</string>
+
 
 </resources>
