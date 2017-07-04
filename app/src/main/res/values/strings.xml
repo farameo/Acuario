@@ -22,5 +22,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seteo_luces">Configure a su gusto como desea que funcione el grupo de luces</string>
+
+    <string name="encendido">Encendido</string>
+    <string name="hora_encendido">Hora de encendido</string>
+    <string name="potencia_encendido">Potencia de la luz al iniciar</string>
+    <string name="potencia_incrementos">Incrementos en potencia</string>
+    <string name="minutos_incremento">Incrementos en minutos</string>
+    <string name="potencia_final">Potencia final de la luz</string>
 
 </resources>

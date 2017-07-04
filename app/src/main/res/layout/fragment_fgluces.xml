@@ -2,12 +2,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.farameo.acuario.FGLuces">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.farameo.acuario.FGLuces"
+    android:padding="10dp"
+    android:background="#EEEEEE">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.CardView
+        android:id="@+id/idCardViewLuces"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="@dimen/tamanio_cardview_luces"
+        card_view:cardCornerRadius="@dimen/cardview_luces"
+        card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/seteo_luces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seteo_luces" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/encendido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/encendido" />
+
+                <TextView
+                    android:id="@+id/hora_inicio"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/encendido"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@+id/encendido"
+                    android:layout_toRightOf="@+id/encendido"
+                    android:text="@string/hora_encendido" />
+
+                <EditText
+                    android:id="@+id/edHora_encendido"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:layout_alignBottom="@+id/hora_inicio"
+                    android:layout_toRightOf="@+id/hora_inicio"
+                    android:layout_toEndOf="@+id/hora_inicio" />
+
+                <TextView
+                    android:id="@+id/potencia_inicio"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hora_inicio"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/edHora_encendido"
+                    android:layout_toStartOf="@+id/edHora_encendido"
+                    android:text="@string/potencia_encendido" />
+
+                <EditText
+                    android:id="@+id/edpotencia_inicio"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:layout_alignBottom="@+id/potencia_inicio"
+                    android:layout_alignLeft="@+id/edHora_encendido"
+                    android:layout_alignStart="@+id/edHora_encendido" />
+
+                <TextView
+                    android:id="@+id/potencia_incrementos"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/potencia_inicio"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/edHora_encendido"
+                    android:layout_toStartOf="@+id/edHora_encendido"
+                    android:text="@string/potencia_incrementos" />
+
+                <EditText
+                    android:id="@+id/edpotencia_incrementos"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:layout_alignBottom="@+id/potencia_incrementos"
+                    android:layout_alignLeft="@+id/edHora_encendido"
+                    android:layout_alignStart="@+id/edHora_encendido" />
+
+               <TextView
+                    android:id="@+id/minutos_incrementos"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/potencia_incrementos"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/edHora_encendido"
+                    android:layout_toStartOf="@+id/edHora_encendido"
+                    android:text="@string/minutos_incremento" />
+
+                <EditText
+                    android:id="@+id/edminutos_incrementos"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:layout_alignBottom="@+id/minutos_incrementos"
+                    android:layout_alignLeft="@+id/edHora_encendido"
+                    android:layout_alignStart="@+id/edHora_encendido" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
 
 </FrameLayout>
