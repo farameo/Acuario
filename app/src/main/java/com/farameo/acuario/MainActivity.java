@@ -84,6 +84,10 @@ public class MainActivity extends AppCompatActivity
             FGLuces fgLuces = new FGLuces();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.contenedor, fgLuces).commit();
+        } else if (id == R.id.nav_blue_con_des) {
+            FGBluetooh fgBluetooh = new FGBluetooh();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.contenedor, fgBluetooh).commit();
 
         } else if (id == R.id.nav_nivel_agua) {
 
