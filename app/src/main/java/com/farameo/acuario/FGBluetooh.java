@@ -2,6 +2,7 @@ package com.farameo.acuario;
 
 
 import android.bluetooth.BluetoothAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,11 +11,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import static android.app.Activity.RESULT_OK;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class FGBluetooh extends Fragment {
+    int REQUEST_ENABLE_BT = 1;
 
     private Button btnBluetooth;
     private BluetoothAdapter bluetoothAdapter;
@@ -24,6 +28,16 @@ public class FGBluetooh extends Fragment {
         // Required empty public constructor
     }
 
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if ( resultCode == RESULT_OK){
+            Toast.makeText(getContext(), "uno", Toast.LENGTH_SHORT).show();
+        } else{
+            Toast.makeText(getContext(), "NO CERO", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,11 +60,17 @@ public class FGBluetooh extends Fragment {
             btnBluetooth.setText("activar");
         }
 
+        btnBluetooth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(intent, REQUEST_ENABLE_BT);
+            }
+        });
+
+
         return view;
     }
     
-    public void ocBlueetooth(View v) {
-        Toast.makeText(getActivity(), "asdads", Toast.LENGTH_SHORT).show();
-    }
 
 }
